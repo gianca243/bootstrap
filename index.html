@@ -11,31 +11,260 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <div class="row mt-5">
-            <div class="col-lg-4 col-md-6 rojo order-1 order-sm-1">
-             <p>1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores nulla enim recusandae nam ut, illum sunt error! Voluptate molestias, aperiam, minima quasi, earum corporis unde libero voluptatum iure placeat fugiat.</p>
-            </div>
-            <div class="col-lg-4 col-md-6 azul order-3 order-sm-2">
-             <p>2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores nulla enim recusandae nam ut, illum sunt error! Voluptate molestias, aperiam, minima quasi, earum corporis unde libero voluptatum iure placeat fugiat.</p>
-            </div>
-            <div class="col-lg-4 col-md-6  verde order-2 order-sm-3">
-             <p>3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores nulla enim recusandae nam ut, illum sunt error! Voluptate molestias, aperiam, minima quasi, earum corporis unde libero voluptatum iure placeat fugiat.</p>
-            </div>
-         </div>
-    </div>
-    <div class="container">
-        <div class="row mt-5">
-            <div class="col-lg-6 col-md-12 order-2 order-sm-1">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OydbE1Mb7pg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary ">
+          <a class="navbar-brand" href="#"> <img src="image/music.svg"rounded-circle" alt="" width="70px"> </a>
+          <button class="navbar-toggler  " type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse letra" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Playlists</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Top Artistas
+                </a>
+                <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Eden</a>
+                  <a class="dropdown-item" href="#">Valkire</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Pegboard nerds</a>
+                  <a class="dropdown-item" href="#">Suicide Sheep</a>
+                  <a class="dropdown-item" href="#">No Copy Rights Songs</a>
+                </div>
+              </li>
+              <!-- <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li> -->
+    
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Generos
+                </a>
+                <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">House</a>
+                  <a class="dropdown-item" href="#">EDM</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Chillout</a>
+                  <a class="dropdown-item" href="#">Vocal-dupstep</a>
+                </div>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Busca por Artista o Genero"
+                aria-label="Search">
+              <button class="btn btn-outline-success  my-2 my-sm-0 boton " type="submit">Buscar</button>
+            </form>
+          </div>
+        </nav>
+    
+      </header>
+    
+      <main>
+        <!-- Fila -->
+        
+    
+        <div class=" container pt-5">
+            <div class="row" style="margin: auto;">
+                <div id="carouselExampleInterval"  class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-interval="2000">
+                        <img src="./image/imgC1.jpeg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item" data-interval="2000">
+                        <img src="./image/imgC2.jpeg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item" data-interval="2000">
+                        <img src="./image/imgC3.png" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-12  order-1 order-sm-2">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi mollitia quo dolores magnam ullam porro at, sunt, neque assumenda iusto iure odit exercitationem expedita tempore dolorem sit. Nam, totam animi?</p>
+            
+          <div class="row mt-5 border border-primary p-3">
+            <!--  lg- pantallas >992px: Portatiles o Escritorios 
+              md- pantallas >768px: Tablets Ipads
+              sm- pantallas >576px: celulares-->
+            <div class="col-lg-3 col-md-6 col-sm-12 order-2 order-sm-1 ">NoCopyrightSounds 
+                (abreviado como NCS, y traducido al español como Sonidos Sin Copyright) es un sello 
+                discográfico fundado por Billy Woodford en 2011. El sello fue creado como un medio para 
+                encontrar música libre de regalías que pudiera ser usada en los videojuegos.</div>
+            <div class="col-lg-3 col-md-6 col-sm-12 order-1 order-sm-2"> <img src="image/No_Copyright_Sounds_logo.jpg" class="img-fluid"
+                alt="musica"> </div>
+            <div class=" col-lg-3 col-md-6 col-sm-12 order-4 order-sm-3"> MrSuicideSheep es un canal 
+                de promoción musical de YouTube canadiense con sede en Vancouver, Canadá. El canal 
+                publica una amplia variedad de géneros musicales, incluida la música electrónica y no 
+                electrónica. A enero de 2019, el canal tiene más de 11 millones de suscriptores y 4.400 
+                millones de visitas.</div>
+            <div class="col-lg-3 col-md-6 col-sm-12 order-3 order-sm-4 "> <img src="image/img1.png" class="img-fluid"
+                alt="escenario"></div>
+          </div>
+    
+    
+          <div class="container">
+            <div class="row mt-5">
+                <div class="col-lg-4 col-md-6 rojo order-1 order-sm-1 ma-2 pa-2">
+                    <h2>Eden</h2>
+                 <p>1. Jonathon Ng1​ (nacido el 23 de diciembre de 1995) es un cantante, productor y compositor irlandés de música rock indie, nacido en Dublín. Actualmente publica su música bajo el nombre de EDEN, anteriormente conocido como The Eden Project. Su trabajo como The Eden Project presentaba estilos más convencionales de música dance electrónica tales como dubstep y drum and bass,</p>
+                </div>
+                <div class="col-lg-4 col-md-6 azul order-3 order-sm-2 ma-2 pa-2">
+                    <h2>Ashe</h2>
+                 <p>2. Ashlyn Rae Willson (24 de abril de 1993),1​2​conocida como Ashe, es una cantante, escritora, compositora y modelo estadounidense.</p>
+                </div>
+                <div class="col-lg-4 col-md-6  verde order-2 order-sm-3 ma-2 pa-2">
+                    <h2>Pegboard Nerds</h2>
+                 <p>3. Pegboard Nerds es un dúo de disc jockeys y productores de música electrónica, formado por Alexander Odden (proveniente de Hamar, Noruega), y Michael Parsberg (nacido en Copenhague, Dinamarca).
+
+                    Actualmente, sus canciones son grabadas y producidas por la discográfica canadiense Monstercat, con la cual ya ha sacado 4 discos. Es considerada una de las bandas más exitosas de música electrónica y sus derivaciones, en especial EDM (música electrónica de baile), a pesar del poco tiempo en escena.</p>
+                </div>
+             </div>
+        </div>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-lg-6 col-md-12 order-2 order-sm-1">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/AaC6v0wCQWg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12  order-1 order-sm-2">
+                    <p>0:00 YAS - Empty Crown <br>
+                        3:49 Dabin - Alive (feat. RUNN) <br>
+                        9:11 The Tech Thieves - Flowers <br>
+                        12:10 XYLO - Yes & No <br>
+                        15:06 PatrickReza - Strung Out <br>
+                        17:41 DROELOE - Snow Shovels <br>
+                        20:39 WE ARE FURY - Broken (feat. Luma) <br>
+                        23:26 noll -  i hope ur ok <br>
+                        26:22 AK & Sublab - Isolated <br>
+                        ...</p>
+                </div>
             </div>
         </div>
-    </div>
+    
+          
+    
+    
+          <div class="row d-flex justify-content-around mt-5">
+            <div class="col-lg-5 col-md-12 col-sm-12 d-flex flex-column align-items-center justify-content-center bg-primary p-3 ">
+              <img src="image/music.png" style="max-width: 300px;" alt="musica icono">
+              <h2 class="text-center">Registrate y obten 2 meses Gratis!!</h2>
+              <h6>*Aplican condiciones y restricciones*</h6>
+            </div>
+    
+            <div class="col-lg-6 col-md-12 col-sm-12  border border-primary ">
+              <form class="p-5">
+                <div class=" row ">
+                  <div class="form-group col ">
+                    <label for="">Nombre</label>
+                    <input type="text" class="form-control" placeholder="Ingrese su nombre">
+                  </div>
+                  <div class="form-group col">
+                    <label for="">Apellido</label>
+                    <input type="text" class="form-control" placeholder="Ingrese sus apellidos">
+                  </div>
+                </div>
+    
+                  <div class=" row ">
+                    <div class="form-group col">
+                      <label for="">Correo</label>
+                      <input type="email" class="form-control" placeholder="Ingrese sus correo">
+                    </div>
+                    <div class="form-group col">
+                      <label for="">Contraseña</label>
+                      <input type="password" class="form-control" placeholder="Cree una Contraseña">
+                    </div>
+                  </div>
+    
+                  <!-- Expresiones regulares -->
+    
+                  <div class="form-row">
+                    <div class="form-group col-md-5">
+                      <label for="inputCity">Ciudad</label>
+                      <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label for="inputState">País</label>
+                      <select id="inputState" class="form-control">
+                        <option selected>...</option>
+                        <option>Colombia</option>
+                        <option>Chile</option>
+                        <option>Perú</option>
+                        <option>Brasil</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                      <label for="inputZip">Telefono</label>
+                      <input type="tel" class="form-control" id="inputZip">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck">
+                      <label class="form-check-label" for="gridCheck">
+                        *Acepta terminos y condiciones*
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Registrar</button>
+    
+    
+                </div>
+              </form>
+            </div>
+    
+          </div>
+        </div>
+      </main>
+    
+      <footer class="bg-primary mt-5">
+        <div class="card-deck bg-primary p-4 text-center">
+          <div class="card p-4 ">
+            <img src="image/share.svg" class="card-img-top" alt="..." >
+            <div class="card-body">
+              <h5 class="card-title">Redes sociales</h5>
+              <ul >
+                <li><div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>  
+                <li>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+              </ul>
+            </div>
+          </div>
+          <div class="card p-4">
+            <img src="image/music.svg" class="card-img-top" alt="..." width="">
+            <div class="card-body">
+              <h5 class="card-title">BictiaMusic</h5>
+              <p class="card-text">Bienvenido a la mejor plataforma Streaming de musica en Colombia!!</p>
+              <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            </div>
+          </div>
+          <div class="card p-4">
+            <img src="image/code.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Creadores</h5>
+              <p class="card-text">Esta aplicación ha sido creada por los mejores programadores de toda BICTIA</p>
+              <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    
+   
     
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
